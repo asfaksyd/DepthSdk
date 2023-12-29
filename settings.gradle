@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "DepthSdk"
-include ':app'
+include ':midas_depth_sdk'
