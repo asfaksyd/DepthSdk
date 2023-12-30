@@ -90,6 +90,19 @@ afterEvaluate {
         }
     }
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+// Creates a Maven publication called "release".
+            release(MavenPublication) {
+                groupId = 'com.github.asfaksyd'
+                artifactId = 'DepthSdk'
+                version = '1.0.0'
+            }
+        }
+    }
+}
 /*
 publishing {
     publications {
