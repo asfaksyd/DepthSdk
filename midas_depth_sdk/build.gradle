@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.akeso.depthsdk'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
         //applicationId "com.akeso.depthsdk"
         minSdk 23
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0.0"
         project.archivesBaseName = "midas_depth_sdk"
