@@ -98,7 +98,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.asfaksyd'
-                artifactId = 'DepthSdk'
+                artifactId = 'midas_depth_sdk'
                 version = '1.0.0'
             }
         }
