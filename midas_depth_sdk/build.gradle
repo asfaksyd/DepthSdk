@@ -79,7 +79,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 // This is to publish into mavenLocal
-afterEvaluate {
+/*afterEvaluate {
     android.libraryVariants.each {variant ->
         publishing.publications.create(variant.name, MavenPublication) {
             from components.findByName(variant.name)
@@ -89,13 +89,14 @@ afterEvaluate {
             version = '1.0.0'
         }
     }
-}
+}*/
 
 afterEvaluate {
     publishing {
         publications {
 // Creates a Maven publication called "release".
             release(MavenPublication) {
+                from components.release
                 groupId = 'com.github.asfaksyd'
                 artifactId = 'DepthSdk'
                 version = '1.0.0'
