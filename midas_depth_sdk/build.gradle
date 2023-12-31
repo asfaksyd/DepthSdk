@@ -94,27 +94,14 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-// Creates a Maven publication called "release".
+            // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.asfaksyd'
                 artifactId = 'midas_depth_sdk'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
 }
-/*
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.akeso.depthsdk'
-            artifactId = 'depthsdk'
-            version = '1.0.0'
 
-            afterEvaluate {
-                from components.release
-            }
-        }
-    }
-}*/

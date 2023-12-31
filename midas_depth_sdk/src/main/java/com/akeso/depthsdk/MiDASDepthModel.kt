@@ -126,4 +126,8 @@ class MiDASDepthModel(context: Context) {
 
     }
 
+    // This function is to stop the execution of the model
+    fun stopModel() {
+        interpreter.close()
+    }
 }
