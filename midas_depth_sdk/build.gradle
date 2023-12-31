@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace 'com.akeso.depthsdk'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         //applicationId "com.akeso.depthsdk"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0.0"
         project.archivesBaseName = "midas_depth_sdk"
@@ -21,8 +21,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    libraryVariants.all { variant ->
-        variant.outputs.all {
+    libraryVariants.configureEach { variant ->
+        variant.outputs.configureEach {
             if (outputFile != null && outputFileName.endsWith('.aar')) {
                 outputFileName = "${archivesBaseName}-${version}.aar"
             }
