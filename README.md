@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Akeso : Android Depth Estimation SDK In Android With MiDaS</h1>
+  <h1>Akeso : Depth Estimation SDK In Android With MiDaS</h1>
 </div>
 
 ![depth image sample](repo_images/midas_depth_sample_image.jpeg)
